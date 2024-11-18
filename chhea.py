@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import json
 
+
+
 # Step 1: Prompt the user to enter the URL
 url = input("Enter the URL to scrape: ")  # User input for URL
 
@@ -94,3 +96,5 @@ csv_df = pd.DataFrame(data_dict)
 csv_file_name = f"{url_name}.csv"
 csv_df.to_csv(csv_file_name, index=False)
 print(f"Data has been written to {csv_file_name}")
+
+# Set up the Tkinter window
