@@ -33,6 +33,7 @@ for i in range(1, 7):
 paragraphs = []
 for p in soup.find_all('p'):
     paragraphs.append(p.text.strip())
+    print(p.text.strip())
 
 
 # Extract all lists (ordered and unordered)
